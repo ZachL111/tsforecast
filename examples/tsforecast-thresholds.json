@@ -1,0 +1,17 @@
+{
+  "repo": "tsforecast",
+  "thresholds": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 1,
+    "drag": 3,
+    "ship": 203,
+    "watch": 106
+  },
+  "terms": [
+    "feature drift",
+    "window width",
+    "metric stability",
+    "explainability"
+  ]
+}
