@@ -1,0 +1,6 @@
+name,focus,signal,slack,drag,confidence,score,lane
+baseline,feature drift,44,31,24,49,96,hold
+stress,window width,48,27,17,83,155,ship
+edge,metric stability,67,33,30,92,169,ship
+recovery,explainability,77,20,18,81,201,ship
+stale,feature drift,81,22,9,66,223,ship

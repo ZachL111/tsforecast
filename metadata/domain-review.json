@@ -1,0 +1,73 @@
+{
+  "repo": "tsforecast",
+  "language": "TypeScript",
+  "category": "ML utilities",
+  "goal": "Build seasonal trend and residual forecast checks.",
+  "review_model": {
+    "terms": [
+      "feature drift",
+      "window width",
+      "metric stability",
+      "explainability"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "feature drift",
+      "signal": 44,
+      "slack": 31,
+      "drag": 24,
+      "confidence": 49,
+      "score": 96,
+      "lane": "hold"
+    },
+    {
+      "name": "stress",
+      "focus": "window width",
+      "signal": 48,
+      "slack": 27,
+      "drag": 17,
+      "confidence": 83,
+      "score": 155,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "metric stability",
+      "signal": 67,
+      "slack": 33,
+      "drag": 30,
+      "confidence": 92,
+      "score": 169,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "explainability",
+      "signal": 77,
+      "slack": 20,
+      "drag": 18,
+      "confidence": 81,
+      "score": 201,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "feature drift",
+      "signal": 81,
+      "slack": 22,
+      "drag": 9,
+      "confidence": 66,
+      "score": 223,
+      "lane": "ship"
+    }
+  ]
+}
